@@ -16,7 +16,7 @@ GROQ_API_KEY = "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"  # Rep
 
 # GitHub Configuration
 GITHUB_USERNAME = "DegenerateVR"
-GITHUB_TOKEN = "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"  # Replace with a valid GitHub token
+GITHUB_TOKEN = "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"  # Replace with a valid GitHub token
 GITHUB_REPO = "FortuneResponses"
 FILE_PATH = "responses.json"
 
