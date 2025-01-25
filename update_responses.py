@@ -85,6 +85,7 @@ def validate_github_token():
 
     try:
         response = requests.get(url, headers=headers)
+        log_debug(f"GitHub token validation response: {response.status_code} - {response.text}")
         if response.status_code == 401:
             log_error("Invalid GitHub token: Unauthorized access.")
             log_debug("Ensure the token has 'repo' or 'public_repo' scope depending on your repository type.")
@@ -129,7 +130,7 @@ def query_groq(name: str, keywords: List[str]) -> str:
         response = requests.post(GROQ_API_URL, json=payload, headers=headers, timeout=15)
         response.raise_for_status()
         data = response.json()
-        log_debug(f"Received response from Groq API: {data}")
+        log_debug(f"Received response from Groq API: {json.dumps(data, indent=2)}")
 
         if "choices" in data and len(data["choices"]) > 0:
             return data["choices"][0]["message"]["content"]
