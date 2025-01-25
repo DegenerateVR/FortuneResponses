@@ -15,8 +15,8 @@ GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_API_KEY = "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"  # Replace with a valid Groq API key
 
 # GitHub Configuration
-GITHUB_USERNAME = "DegenerateDecals"
-GITHUB_TOKEN = "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"  # Replace with a valid GitHub token
+GITHUB_USERNAME = "DegenerateVR"
+GITHUB_TOKEN = "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"  # Replace with a valid GitHub token
 GITHUB_REPO = "FortuneResponses"
 FILE_PATH = "responses.json"
 
